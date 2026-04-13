@@ -1,10 +1,10 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const msg = ref('Привет, Vue!')
-const rawHtml = ref(`<span style="color: red">Это красный текст</span>`)
-const dynamicId = ref('container-1')
-const isButtonDisabled = ref(false)
+const msg = ref('Привет, Vue!');
+const rawHtml = ref(`<span style="color: red">Это красный текст</span>`);
+const dynamicId = ref('container-1');
+const isButtonDisabled = ref(false);
 </script>
 
 <template>
