@@ -1,7 +1,19 @@
 import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue'
+import UserCard from "./components/UserCard.js";
 
-const app = createApp(App);
+const app = createApp({
+  data() {
+    return {
+      postTitle: 'Мой первый пост',
+      postLikes: 3,
+      postIsPublished: true,
+    };
+  },
+  components: {
+    UserCard,
+  }
+});
+
 app.config.globalProperties.$version = '1.0';
 app.mount('#app');

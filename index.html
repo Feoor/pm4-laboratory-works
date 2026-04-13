@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pm4-lw</title>
-  </head>
-  <body>
-    <div id="app">
-        Загрузка...
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+</head>
+<body>
+<div id="app">
+    <user-card :title="postTitle" :likes="postLikes" :is-published="postIsPublished"></user-card>
+    <user-card title="Пост 2" likes="3"></user-card>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
