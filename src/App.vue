@@ -1,31 +1,17 @@
 <script setup>
 import { ref } from 'vue'
 
-const msg = ref('Привет, Vue!')
-const rawHtml = ref(`<span style="color: red">Это красный текст</span>`)
-const dynamicId = ref('container-1')
-const isButtonDisabled = ref(false)
+
 </script>
 
 <template>
-<!-- 1 Задание  -->
-  <span>{{ msg }}</span>
+  <!-- 1 Задание  -->
 
-<!-- 2 Задание -->
-  {{ rawHtml }}
-  <span v-html="rawHtml"></span>
+  <!-- 2 Задание -->
 
-<!-- 3 Задание -->
-  <div v-bind:id="dynamicId">
-    Блок 1
-  </div>
-  <div :id="dynamicId">
-    Блок 2
-  </div>
+  <!-- 3 Задание -->
 
-<!-- 4 Задание -->
-  <button :disabled="isButtonDisabled" class="btn">Button 1</button>
+  <!-- 4 Задание -->
 
-<!-- 5 Задание -->
-  <span>{{ msg.split('').reverse().join('') }}</span>
+  <!-- 5 Задание -->
 </template>
